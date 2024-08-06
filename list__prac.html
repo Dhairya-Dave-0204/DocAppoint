@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Doctor Registration </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="list__prac.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="work-sans">
+
+    <!-- ============================= NAVIGATION BAR =============================== -->
+
+    <header>
+        <nav>
+            <h1>Doc<span>Appoint</span></h1>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="doctor.html">Doctor</a></li>
+                <li><a href="#">Survey</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="log.html">Join Now</a></li>
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ============================= MULTI FORM =============================== -->
+
+    <!--    <div id="page" class="site">
+            <div class="container">
+                <div class="form-box">
+                    
+                    <div class="progress">
+                        <div class="logo">
+                            <h1>Doc<span>Appoint</span></h1>
+                        </div>
+
+                        <ul class="progress-steps">
+                            <li class="step active">
+                                <span>1</span>
+                                <p>Create account<br><span>25 secs to complete</span></p>
+                            </li>
+                            
+                            <li class="step">
+                                <span>2</span>
+                                <p>Personal Info<br><span>30 secs to complete</span></p>
+                            </li>
+                            
+                            <li class="step">
+                                <span>3</span>
+                                <p>Practice Info<br><span>60 secs to complete</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <form action="#" method="post">
+                        <div class="form-one form-step">
+                            <div class="bg-svg"></div>
+                            <h2>Create an account</h2>
+                            <p>Enter proper details and create an account</p>
+                            
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" placeholder="Enter e-mail" required>
+                            </div>
+                            
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" placeholder="Create password" required>
+                            </div>
+                            
+                            <div>
+                                <label for="confirm">Confirm password</label>
+                                <input type="password" name="confirm" placeholder="Confirm password" required>
+                            </div>
+                        </div>
+
+                        <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                            <h2>Personal Information</h2>
+                            <p>Enter proper details to dispaly on your profile</p>
+                            <div>
+                                <label for="first">First Name</label>
+                                <input type="text" name="first" placeholder="First name" required>
+                            </div>
+                            
+                            <div>
+                                <label for="last">Last Name</label>
+                                <input type="text" name="last" placeholder="Last name" required>
+                            </div>
+                            
+                            <div>
+                                <label for="number">Phone number</label>
+                                <input type="tel" name="number" placeholder="Phone number">
+                            </div>
+                            
+                            <div>
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" name="dob" placeholder="D.O.B." required>
+                            </div>
+                            
+                            <div class="select-box">
+                                <label for="type">Gender :</label>
+                                <select name="type" id="type">
+                                    <option disabled value="select">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="nosay">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-three form-step">
+                            <div class="bg-svg"></div>
+                            <h2>Practice Information</h2>
+                            <p>Enter proper details to dispaly on your profile</p>
+                            <div>
+                                <label for="pracname">Practice Name</label>
+                                <input type="text" name="pracname" placeholder="Practice Name" required>
+                            </div>
+
+                            <div class="select-box">
+                                <label for="state">State :</label>
+                                <select name="state" id="state" class="form-control">
+                                    <option value="select">Select</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="city">City</label>
+                                <input type="text" name="city" placeholder="City" required>
+                            </div>
+                            
+                            <div>
+                                <label for="address">Address</label>
+                                <input type="text" name="address" placeholder="Address" required>
+                            </div>
+                            
+                            <div class="select-box">
+                                <label for="practice">Practice speciality</label>
+                                <select name="practice">
+                                    <option value="select">Select</option>
+                                    <option value="primary">Primary Care</option>
+                                    <option value="dentist">Dentist</option>
+                                    <option value="dermatologist">Dermatologist</option>
+                                    <option value="psychiatrist">Psychiatrist</option>
+                                    <option value="ophthalmologist">Ophthalmologist</option>
+                                    <option value="cardiologist">Cardiologist</option>
+                                    <option value="general">General Physician</option>
+                                </select>
+                            </div>
+                            
+                            <div class="select-box">
+                                <label for="practice">Practice size</label>
+                                <select name="practice">
+                                    <option value="select">Select</option>
+                                    <option value="primary">1-5 providers</option>
+                                    <option value="dentist">6-10 providers</option>
+                                    <option value="dermatologist">11-14 providers</option>
+                                    <option value="psychiatrist">15+ providers</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="pracname">Practice Name</label>
+                                <input type="text" name="pracname" placeholder="Practice Name" required>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn-prev" disabled>Back</button>
+                            <button type="button" class="btn-prev">Next</button>
+                            <button type="button" class="btn-prev">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+
+        
+
+    <!-- ============================= FOOTER SECTION =============================== -->
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h1 class="footer-logo">DocAppoint</h1>
+                <p class="footer-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae error cupiditate ipsum commodi, eum
+                    natus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, maxime.
+                </p>
+
+                <div class="social-icon">
+                    <a href="https://www.wikipedia.org/" class="social-links"><i class='bx bx-globe'></i> </a>
+                    <a href="https://www.facebook.com/" class="social-links"> <i class='bx bxl-facebook'></i> </a>
+                    <a href="https://www.instagram.com/" class="social-links"> <i class='bx bxl-instagram'></i> </a>
+                    <a href="https://www.whatsapp.com/" class="social-links"> <i class='bx bxl-whatsapp'></i> </a>
+                </div>
+            </div>
+            <div class="col">
+
+                <h3>Gete in touch with us</h3>
+                <p class="bold">24/7 Support:</p>
+                <p>Mobile: +91 1234567890</p>
+                <p>Telephone: 00 123456789</p>
+
+                <br>
+
+                <p class="bold">E-mail:</p>
+                <p class="email">aiueoiefidu@gmail.com</p>
+            </div>
+            <div class="col">
+                <h3>Quick Links</h3>
+
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="doctor.html">Doctor</a></li>
+                    <li><a href="#">Survey</a></li>
+                    <li><a href="about.html">Aobut Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">DocAppoint © - All Rights Reserved</p>
+    </footer>
+
+    <!-- ============================= JAVASCRIPT LINKS =============================== -->
+
+    <script src="list__prac.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Doctor Profile </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="doc_profile1.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body class="work-sans">
+        
+        <!-- ============================= NAVIGATION BAR =============================== -->
+    
+        <header id="nav-bar">
+            <nav>
+                <h1>Doc<span>Appoint</span></h1>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="doctor.html">Doctor</a></li>
+                    <li><a href="#">Survey</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="log.html">Join Now</a></li>
+                </ul>
+                <button id="btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- ============================= FIRST PROFILE SECTION =============================== -->
+
+        <div class="first-container" id="first-container">
+            <div class="left-content">
+                <div class="img-text">
+                    <div class="profile-pic">
+                        <img src="Images/img-5.jpg">
+                    </div>
+                    <div class="doc-info">
+                        <h2>Doctor Full name</h2>
+                        <h3>Profession</h3>
+                        <h4>Doctors address in short</h4>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="rating">
+                        <div class="rating-text">
+                            <h1>5.0</h1>
+                        </div>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p> 
+                           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum magnam laborum, dolorem excepturi beatae a 
+                            neque temporibus officia optio maxime."
+                        </p>
+                        <a href="#review-container">See all reviews</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="main-headings">
+                    <a href="#">Highlights</a>
+                    <a href="#about-container">About</a>
+                    <a href="#edu-container">Education</a>
+                    <a href="#review-container">Reviews</a>
+                </div>
+                <div class="highlights">
+                    <div class="high-content">
+                        <i class="fa-regular fa-handshake"></i>
+                        <div class="high-text">
+                            <h4>Patients often return</h4>
+                            <p>More patients return than other providers in the area</p>
+                        </div>
+                    </div>
+                    <div class="high-content">
+                        <i class="fa-regular fa-clock"></i>
+                        <div class="high-text">
+                            <h4>Excellent wait time</h4>
+                            <p>100% of patients waited less than 30 minutes</p>
+                        </div>
+                    </div>
+                    <div class="high-content">
+                        <i class='bx bx-party'></i>
+                        <div class="high-text">
+                            <h4>Highly recommended</h4>
+                            <p>100% of patients gave this doctor 5 stars</p>
+                        </div>
+                    </div>
+                    <div class="high-content">
+                        <i class="fa-regular fa-calendar-plus"></i>
+                        <div class="high-text">
+                            <h4>New patient appointments</h4>
+                            <p>Appointments available for new patients on DocAppoint</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================= APPOINTMENT FORM SECTION =============================== -->
+        
+        <div class="appoint-container">
+            <div class="img-container">
+                <img src="Images/appointment-form.png" alt="">
+            </div>
+            <div class="form-container">
+                <h4>Appointments</h4>
+                <h2>Book your appointment</h2>
+                <form action="#" method="post">
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" required />
+                        <label for="">Name</label>
+                        <span>Name</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="tel" name="number" class="input" required />
+                        <label for="">Number</label>
+                        <span>Number</span>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" required />
+                        <label for="">E-mail</label>
+                        <span>E-mail</span>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="date" name="date" class="input" required />
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="time" name="time" class="input" required />
+                    </div>
+
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- ============================= DOCTOR ABOUT SECTION =============================== -->
+        
+        <div class="about-container" id="about-container">
+            <h3>About Dr.FullName</h3>
+            <p class="show-less">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Labore reiciendis nihil fuga, beatae dolor voluptate possimus nobis porro? Cumque, dolore. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quas!
+                <p class="show-more" id="show-more">
+                    <br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus animi dolorum libero dolor commodi officia, 
+                    iusto voluptatem tempore aliquid doloremque saepe voluptate consequuntur velit exercitationem at neque vitae minus, 
+                    aspernatur, praesentium debitis vel veniam facere. Consequuntur dolor doloribus quo quidem.
+                    <br> <br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque iusto eveniet sint, 
+                    rerum magni dolores incidunt vitae dolorem voluptatem.
+                </p>
+                <span class="showmore-btn" id="showmore-btn">Show More...</span>
+            </p>
+        </div>
+        
+        <!-- ============================= DOCTOR EDUCATION AND BACKGROUND =============================== -->
+        
+        <div class="edu-container" id="edu-container">
+            <h2>Education and background</h2>
+            
+            <h3>Specialties</h3>
+            <P>Oral Surgeon</P>
+
+            <h3>Practice names</h3>
+            <p>Upper East Oral and Maxillofacial Surgery</p>
+
+            <h3>Hospital affiliations</h3>
+            <p>Woodhull Medical and Mental Health Center</p>
+
+            <h3>Board certifications</h3>
+            <p>American Board of Oral and Maxillofacial Surgery</p>
+            
+            <div class="wrapper">
+                <h3>Education and training</h3>
+                <p>Dental School - Boston University, Doctor of Dental Medicine</p>
+                <p>Woodhull Hospital, Internship in Oral and Maxillofacial Surgery</p>
+                <p>Woodhull Hospital, Residency in Oral and Maxillofacial Surgery</p>
+            </div>
+
+            <h3>Professional memberships</h3>
+            <p>International Association of Oral and Maxillofacial Surgeons</p>
+
+            <div class="wrapper">
+                <h3>Languages spoken</h3>
+                <p>English</p>
+                <p>Spanish</p>
+                <p>Farsi</p>
+            </div>
+            
+            <h3>Provider's gender</h3>
+            <p>Female</p>
+        </div>
+        
+        <!-- ============================= DOCTOR REVIEWS =============================== -->
+        
+        <div class="review-container" id="review-container">
+            <h3>Patient Reviews</h3>
+            <div class="star-container">
+                <div class="stars">
+                    <h4>Overall rating</h4>
+                    <div class="rating-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            
+                <div class="stars">
+                    <h4>Wait time</h4>
+                    <div class="rating-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            
+                <div class="stars">
+                    <h4>Bedside manner</h4>
+                    <div class="rating-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <i class="fa-solid fa-user-shield"></i>
+                <h4>
+                    Your trust is our top concern, so providers can't pay to alter or remove reviews. 
+                    We also don't publish reviews that contain any private patient health information.
+                </h4>
+            </div>
+
+            <div class="main-section">
+                <div class="count-btn">
+                    <h4>300+ reviews</h4>
+                    <div class="buttons">
+                        <div class="search-review">
+                            <div class="input-container">
+                                <input type="tel" name="search" class="input" required />
+                                <label for="">Search</label>
+                                <span>Search</span>
+                            </div>
+                        </div>
+                        <div class="select-box">
+                            <select name="type" id="type">
+                                <option value="relevant">Most Relevant</option>
+                                <option value="hrate">Highest Rated</option>
+                                <option value="lrate">Lowest Rated</option>
+                                <option value="new">Newest</option>
+                                <option value="old">Oldest</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-wrapper">
+                <div class="review">
+                    <div class="stars-given">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Hic similique maxime ut ratione sint quod laboriosam porro minus ducimus cupiditate.
+                    </p>
+                    <div class="user-detais">
+                        <p>Date</p>
+                        <span></span>
+                        <p>Name</p>
+                        <span></span>
+                        <p>Verified Patient</p>
+                    </div>
+                </div>
+                
+                <div class="review">
+                    <div class="stars-given">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Hic similique maxime ut ratione sint quod laboriosam porro minus ducimus cupiditate.
+                    </p>
+                    <div class="user-detais">
+                        <p>Date</p>
+                        <span></span>
+                        <p>Name</p>
+                        <span></span>
+                        <p>Verified Patient</p>
+                    </div>
+                </div>
+                
+                <div class="review">
+                    <div class="stars-given">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Hic similique maxime ut ratione sint quod laboriosam porro minus ducimus cupiditate.
+                    </p>
+                    <div class="user-detais">
+                        <p>Date</p>
+                        <span></span>
+                        <p>Initials Hidden</p>
+                    </div>
+                </div>
+                
+                <div class="review">
+                    <div class="stars-given">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Hic similique maxime ut ratione sint quod laboriosam porro minus ducimus cupiditate.
+                    </p>
+                    <div class="user-detais">
+                        <p>Date</p>
+                        <span></span>
+                        <p>Nmame</p>
+                        <span></span>
+                        <p>Verified Patient</p>
+                    </div>
+                </div>
+                
+                <div class="review">
+                    <div class="stars-given">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Hic similique maxime ut ratione sint quod laboriosam porro minus ducimus cupiditate.
+                    </p>
+                    <div class="user-detais">
+                        <p>Date</p>
+                        <span></span>
+                        <p>Initials Hidden</p>
+                    </div>
+                </div>
+                
+                <div class="review">
+                    <div class="stars-given">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Hic similique maxime ut ratione sint quod laboriosam porro minus ducimus cupiditate.
+                    </p>
+                    <div class="user-detais">
+                        <p>Date</p>
+                        <span></span>
+                        <p>Initials Hidden</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#nav-bar" class="back-top"><button class="top">Back to Top <i class="fa-solid fa-chevron-up"></i> </button></a>
+        </div>
+
+        <!-- ============================= FOOTER SECTION =============================== -->
+    
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h1 class="footer-logo">DocAppoint</h1>
+                    <p class="footer-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae error cupiditate ipsum commodi, eum
+                        natus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, maxime.
+                    </p>
+    
+                    <div class="social-icon">
+                        <a href="https://www.wikipedia.org/" class="social-links"><i class='bx bx-globe'></i> </a>
+                        <a href="https://www.facebook.com/" class="social-links"> <i class='bx bxl-facebook'></i> </a>
+                        <a href="https://www.instagram.com/" class="social-links"> <i class='bx bxl-instagram'></i> </a>
+                        <a href="https://www.whatsapp.com/" class="social-links"> <i class='bx bxl-whatsapp'></i> </a>
+                    </div>
+                </div>
+                <div class="col">
+    
+                    <h3>Gete in touch with us</h3>
+                    <p class="bold">24/7 Support:</p>
+                    <p>Mobile: +91 1234567890</p>
+                    <p>Telephone: 00 123456789</p>
+    
+                    <br>
+    
+                    <p class="bold">E-mail:</p>
+                    <p class="email">aiueoiefidu@gmail.com</p>
+                </div>
+                <div class="col">
+                    <h3>Quick Links</h3>
+    
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="doctor.html">Doctor</a></li>
+                        <li><a href="#">Survey</a></li>
+                        <li><a href="about.html">Aobut Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ's</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">DocAppoint © - All Rights Reserved</p>
+        </footer>
+        
+        <!-- ============================= JAVASCRIPT LINKS =============================== -->
+        
+        <script src="doc_profile1.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,580 @@
+/* --------------------------------------- DEFAULT ------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #324b4c;
+}
+
+/* --------------------------------------- DESKTOP ------------------------------------------------ */
+
+/* -------------------- NAVIGATION BAR ------------------------ */
+
+header nav {
+  height: 7vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 40px;
+  color: #00777c;
+}
+
+header h1 span {
+  color: #00acb1;
+}
+
+header ul {
+  display: flex;
+  margin: 50px;
+  list-style: none;
+}
+
+header ul li {
+  transition: 0.3s ease;
+}
+
+header ul li:hover {
+  transform: scale(1.25);
+}
+
+header a {
+  text-decoration: none;
+  color: #324b4c;
+  padding: 0.5rem 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header a:hover {
+  color: #00acb1;
+}
+
+#btn {
+  all: unset;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  display: none;
+}
+
+#btn:hover {
+  transform: scale(1.2);
+}
+
+/* -------------------- MEDIA QUERIES ------------------------ */
+
+@media screen and (max-width: 1050px) {
+  #btn {
+    display: block;
+    margin-right: 30px;
+  }
+
+  header ul {
+    position: absolute;
+    top: 3.6rem;
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  header ul li a {
+    color: #f5f5f5;
+  }
+
+  header ul.show {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    right: 0;
+  }
+
+  header ul.show li a {
+    font-size: 26px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+
+  header ul {
+    width: 90%;
+    right: 1.5rem;
+  }
+
+  header ul.show {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header ul.show {
+    width: 100%;
+  }
+
+  #btn {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header h1 {
+    font-size: 24px;
+    margin-left: 15px;
+  }
+
+  #btn {
+    font-size: 20px;
+  }
+}
+
+/* -------------------- HEADING ABOUT US SECTION ------------------------ */
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 60px auto;
+}
+  
+.heading h1 {
+  font-size: 60px;
+  position: relative;
+  margin: 60px 0px 60px 0px;
+}
+  
+.heading h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #00acb1;
+}
+  
+@media screen and (max-width: 1000px) {
+  .heading {
+    padding: 0 20px;
+  }
+  .heading h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .heading {
+    margin-bottom: 0px;
+  }
+  
+  .heading h1 {
+    font-size: 40px;
+    margin: 30px;
+  }
+}
+  
+
+/* -------------------- FAQ's SECTION ------------------------ */
+
+.faq-container {
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 160px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.25);
+  margin: 20px 40px 20px;
+}
+
+.faq-section h2 {
+  color: #00acb1;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.faq-section h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.input-container {
+  position: relative;
+  margin: 1.7rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #324b4c;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #324b4c;
+  font-weight: 500;
+  font-size: 0.97rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #324b4c;
+  font-size: 1rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+.btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #00acb1;
+  border: none;
+  font-size: 1rem;
+  color: #f5f5f5;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  margin: 0;
+}
+
+.btn:hover {
+  background-color: #f5f5f5;
+  color: #00acb1;
+  border: 2px solid #00acb1;
+  font-weight: 550;
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: #f5f5f5;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.9rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.faq-box {
+  flex: 1;
+  min-width: 320px;
+  padding: 2% 0 4% 4%;
+  border-left: 2px solid #00acb1;
+}
+
+.accordian {
+  width: 100%;
+  padding: 1.5rem;
+  border-bottom: 1px solid #111;
+}
+
+.question { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-title {
+  display: block;
+  position: relative;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #324b4c;
+}
+
+.icon {
+  color: #00acb1;
+  margin-right: 10px;
+  font-size: 27px;
+  transition: transform 0.3s;
+}
+
+.icon.active {
+  transform: rotate(-180deg);
+}
+
+.faq-detail {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: max-height 0.3s;
+}
+
+@media screen and (max-width: 1050px) { 
+  .faq-title {
+    font-size: 30px;
+  }
+
+  .faq-detail {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .faq-section {
+      flex: 1;
+      margin: 20px 30px 80px;
+      width: 80%;
+  }
+
+  .faq-box {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 425px) { 
+  .faq-section h2 {
+    font-size: 16px;
+  }
+  
+  .faq-section h1 {
+    font-size: 28px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faq-detail {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  
+  .faq-section {
+    width: 95%;
+  }
+  
+  .faq-section h2 {
+    font-size: 14px;
+  }
+  
+  .faq-section h1 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+  }
+}
+
+/* -------------------- FOOTER SECTION ------------------------ */
+
+footer {
+  width: 100%;
+  bottom: 0;
+  color: #f5f5f5;
+  padding: 100px 0px 30px;
+  font-size: 14px;
+  line-height: 20px;
+  background: linear-gradient(to right, #00acb1, #00777c);
+  border-top-left-radius: 125px;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.footer-logo {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  font-size: 24px;
+}
+
+.col p {
+  font-size: 16px;
+}
+
+.col .footer-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.social-icon {
+  display: flex;
+}
+
+.social-icon .bx {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 26px;
+  color: #111;
+  background: #f5f5f5;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.email {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-links li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* -------------------- MEDIA QUERIES ------------------------ */
+
+@media screen and (max-width: 768px) {
+  footer {
+    bottom: unset;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+}

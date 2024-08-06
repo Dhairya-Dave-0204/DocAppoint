@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #ad9e9e;
+  color: #080808;
+}
+
+
+.wrapper {
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.text {
+  font-size: 30px;
+}
+
+.btn {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.readmore {
+  display: none;
+}
+
+.active {
+  display: block;
+  transition: 0.3s ease;
+}
