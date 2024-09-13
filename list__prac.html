@@ -40,195 +40,184 @@
 
     <!-- ============================= MULTI FORM =============================== -->
 
-    <!--    <div id="page" class="site">
-            <div class="container">
-                <div class="form-box">
-                    
-                    <div class="progress">
-                        <div class="logo">
-                            <h1>Doc<span>Appoint</span></h1>
-                        </div>
-
-                        <ul class="progress-steps">
-                            <li class="step active">
-                                <span>1</span>
-                                <p>Create account<br><span>25 secs to complete</span></p>
-                            </li>
-                            
-                            <li class="step">
-                                <span>2</span>
-                                <p>Personal Info<br><span>30 secs to complete</span></p>
-                            </li>
-                            
-                            <li class="step">
-                                <span>3</span>
-                                <p>Practice Info<br><span>60 secs to complete</span></p>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <form action="#" method="post">
-                        <div class="form-one form-step">
-                            <div class="bg-svg"></div>
-                            <h2>Create an account</h2>
-                            <p>Enter proper details and create an account</p>
-                            
-                            <div>
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" placeholder="Enter e-mail" required>
-                            </div>
-                            
-                            <div>
-                                <label for="password">Password</label>
-                                <input type="password" name="password" placeholder="Create password" required>
-                            </div>
-                            
-                            <div>
-                                <label for="confirm">Confirm password</label>
-                                <input type="password" name="confirm" placeholder="Confirm password" required>
-                            </div>
-                        </div>
-
-                        <div class="form-two form-step">
-                            <div class="bg-svg"></div>
-                            <h2>Personal Information</h2>
-                            <p>Enter proper details to dispaly on your profile</p>
-                            <div>
-                                <label for="first">First Name</label>
-                                <input type="text" name="first" placeholder="First name" required>
-                            </div>
-                            
-                            <div>
-                                <label for="last">Last Name</label>
-                                <input type="text" name="last" placeholder="Last name" required>
-                            </div>
-                            
-                            <div>
-                                <label for="number">Phone number</label>
-                                <input type="tel" name="number" placeholder="Phone number">
-                            </div>
-                            
-                            <div>
-                                <label for="dob">Date of Birth</label>
-                                <input type="date" name="dob" placeholder="D.O.B." required>
-                            </div>
-                            
-                            <div class="select-box">
-                                <label for="type">Gender :</label>
-                                <select name="type" id="type">
-                                    <option disabled value="select">Select</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                    <option value="nosay">Prefer not to say</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-three form-step">
-                            <div class="bg-svg"></div>
-                            <h2>Practice Information</h2>
-                            <p>Enter proper details to dispaly on your profile</p>
-                            <div>
-                                <label for="pracname">Practice Name</label>
-                                <input type="text" name="pracname" placeholder="Practice Name" required>
-                            </div>
-
-                            <div class="select-box">
-                                <label for="state">State :</label>
-                                <select name="state" id="state" class="form-control">
-                                    <option value="select">Select</option>
-                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                                    <option value="Assam">Assam</option>
-                                    <option value="Bihar">Bihar</option>
-                                    <option value="Chandigarh">Chandigarh</option>
-                                    <option value="Chhattisgarh">Chhattisgarh</option>
-                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-                                    <option value="Daman and Diu">Daman and Diu</option>
-                                    <option value="Delhi">Delhi</option>
-                                    <option value="Lakshadweep">Lakshadweep</option>
-                                    <option value="Puducherry">Puducherry</option>
-                                    <option value="Goa">Goa</option>
-                                    <option value="Gujarat">Gujarat</option>
-                                    <option value="Haryana">Haryana</option>
-                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                                    <option value="Jharkhand">Jharkhand</option>
-                                    <option value="Karnataka">Karnataka</option>
-                                    <option value="Kerala">Kerala</option>
-                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-                                    <option value="Maharashtra">Maharashtra</option>
-                                    <option value="Manipur">Manipur</option>
-                                    <option value="Meghalaya">Meghalaya</option>
-                                    <option value="Mizoram">Mizoram</option>
-                                    <option value="Nagaland">Nagaland</option>
-                                    <option value="Odisha">Odisha</option>
-                                    <option value="Punjab">Punjab</option>
-                                    <option value="Rajasthan">Rajasthan</option>
-                                    <option value="Sikkim">Sikkim</option>
-                                    <option value="Tamil Nadu">Tamil Nadu</option>
-                                    <option value="Telangana">Telangana</option>
-                                    <option value="Tripura">Tripura</option>
-                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-                                    <option value="Uttarakhand">Uttarakhand</option>
-                                    <option value="West Bengal">West Bengal</option>
-                                </select>
-                            </div>
-                            
-                            <div>
-                                <label for="city">City</label>
-                                <input type="text" name="city" placeholder="City" required>
-                            </div>
-                            
-                            <div>
-                                <label for="address">Address</label>
-                                <input type="text" name="address" placeholder="Address" required>
-                            </div>
-                            
-                            <div class="select-box">
-                                <label for="practice">Practice speciality</label>
-                                <select name="practice">
-                                    <option value="select">Select</option>
-                                    <option value="primary">Primary Care</option>
-                                    <option value="dentist">Dentist</option>
-                                    <option value="dermatologist">Dermatologist</option>
-                                    <option value="psychiatrist">Psychiatrist</option>
-                                    <option value="ophthalmologist">Ophthalmologist</option>
-                                    <option value="cardiologist">Cardiologist</option>
-                                    <option value="general">General Physician</option>
-                                </select>
-                            </div>
-                            
-                            <div class="select-box">
-                                <label for="practice">Practice size</label>
-                                <select name="practice">
-                                    <option value="select">Select</option>
-                                    <option value="primary">1-5 providers</option>
-                                    <option value="dentist">6-10 providers</option>
-                                    <option value="dermatologist">11-14 providers</option>
-                                    <option value="psychiatrist">15+ providers</option>
-                                </select>
-                            </div>
-                            
-                            <div>
-                                <label for="pracname">Practice Name</label>
-                                <input type="text" name="pracname" placeholder="Practice Name" required>
-                            </div>
-                        </div>
-
-                        <div class="btn-group">
-                            <button type="button" class="btn-prev" disabled>Back</button>
-                            <button type="button" class="btn-prev">Next</button>
-                            <button type="button" class="btn-prev">Submit</button>
-                        </div>
-                    </form>
+   <div class="main-container">
+        <form action="#" class="form" autocomplete="off">
+            <h1 class="text-center heading">List your practice</h1>
+            <!-- Progress bar -->
+            <div class="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active" data-title="Register"></div>
+                <div class="progress-step" data-title="Personal"></div>
+                <div class="progress-step" data-title="Practice"></div>
+                <div class="progress-step" data-title="Education"></div>
+            </div>
+    
+            <!-- Step 1 -->
+            <div class="form-step form-step-active">
+                <div class="input-group">
+                    <label for="username">E-mail :</label>
+                    <input type="email" name="username" id="username" required />
+                </div>
+    
+                <div class="input-group">
+                    <label for="position">Password :</label>
+                    <input type="password" name="position" id="position" required minlength="8" maxlength="16" />
+                </div>
+    
+                <div class="input-group">
+                    <label for="position">Confirm Password :</label>
+                    <input type="password" name="position" id="position" required minlength="8" maxlength="16" />
+                </div>
+    
+                <div class="">
+                    <a href="#" class="ml-auto btn btn-next width-50">Next</a>
                 </div>
             </div>
-        </div> -->
-
-        
+    
+            <!-- Step 2 -->
+            <div class="form-step">
+                <div class="input-group">
+                    <label for="phone">Full Name :</label>
+                    <input type="text" name="phone" id="phone" required />
+                </div>
+    
+                <div class="input-group">
+                    <label for="email">Phone number :</label>
+                    <input type="tel" name="email" id="email" required />
+                </div>
+    
+                <div class="input-group">
+                    <label for="dob">Date of Birth :</label>
+                    <input type="date" placeholder="D.O.B." name="dob" id="dob" required />
+                </div>
+    
+                <div class="select-box">
+                    <label for="type">Gender :</label>
+                    <select name="type" id="type" required>
+                        <option disabled value="select">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="nosay">Not to say</option>
+                    </select>
+                </div>
+    
+                <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
+                </div>
+            </div>
+    
+            <!-- Step 3 -->
+            <div class="form-step">
+                <div class="input-group">
+                    <label for="pracname">Practice Name :</label>
+                    <input type="text" name="pracname" id="pracname" required />
+                </div>
+    
+                <div class="select-box">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" class="form-control" required>
+                        <option value="select">Select</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="city">City :</label>
+                    <input type="text" name="city" id="city" required />
+                </div>
+    
+                <div class="input-group">
+                    <label for="address">Address :</label>
+                    <input type="text" name="address" id="address" required />
+                </div>
+    
+                <div class="select-box">
+                    <label for="practice">Speciality :</label>
+                    <select name="practice" required>
+                        <option value="select">Select</option>
+                        <option value="primary">Primary Care</option>
+                        <option value="dentist">Dentist</option>
+                        <option value="dermatologist">Dermatologist</option>
+                        <option value="psychiatrist">Psychiatrist</option>
+                        <option value="ophthalmologist">Ophthalmologist</option>
+                        <option value="cardiologist">Cardiologist</option>
+                        <option value="general">General Physician</option>
+                    </select>
+                </div>
+    
+                <div class="select-box last-select">
+                    <label for="practice">Size :</label>
+                    <select name="practice" required>
+                        <option value="select">Select</option>
+                        <option value="primary">1-5 providers</option>
+                        <option value="dentist">6-10 providers</option>
+                        <option value="dermatologist">11-14 providers</option>
+                        <option value="psychiatrist">15+ providers</option>
+                    </select>
+                </div>
+    
+                <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
+                </div>
+            </div>
+    
+            <!-- Step 4 -->
+            <div class="form-step">
+                <div class="input-group">
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password" required />
+                </div>
+    
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password :</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required />
+                </div>
+    
+                <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <input type="submit" value="Submit" class="btn" />
+                </div>
+            </div>
+        </form>
+    </div>
 
     <!-- ============================= FOOTER SECTION =============================== -->
 
