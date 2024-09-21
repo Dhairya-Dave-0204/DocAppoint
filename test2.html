@@ -11,24 +11,37 @@
         <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 
 
-        <script src="https://kit.fontawesome.com/cf155600d6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <link rel="stylesheet" href="test2.css">
     </head>
     <body class="comfortaa">
        
-        <div class="wrapper">
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Consectetur assumenda deleniti porro esse, quo libero unde consequuntur fugiat excepturi voluptatum!
-                <span class="readmore" id="read-more">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sapiente? Impedit numquam sapiente doloremque est 
-                    assumenda, suscipit iusto consequatur, voluptatem aliquid vitae deserunt animi, consequuntur molestiae soluta non labore harum.
-                </span>
-                <span class="btn" id="btn">Show More</span>
-            </p>
+        <button class="chatbot-toggler">
+            <span> <i class="fa-regular fa-message"></i> </span>
+            <span> <i class="fa-solid fa-chevron-down"></i> </span>
+        </button>
+        
+        <div class="chatbot">   
+            <header>
+                <h2>DocAppoint</h2>
+                <span class="close-btn"> <i class="fa-solid fa-chevron-down"></i> </span>
+            </header>
+            
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span> <i class="fa-solid fa-robot"></i> </span>
+                    <p>Hey mate! <br> How can I help you today?</p>
+                </li>
+                
+            </ul>
+
+            <div class="chat-input">
+                <textarea placeholder="Enter a message.." required></textarea>
+                <button><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
         </div>
         
 
-        <script src="test2.js"></script>
+        <script src="test2.js" defer></script>
     </body>
 </html><!-- action="https://api.web3forms.com/submit"  -->
