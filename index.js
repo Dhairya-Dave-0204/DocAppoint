@@ -1,4 +1,4 @@
-/* ------------------ NAVIGATION BAR ------------------ */
+/* ------------------ AI CHATBOT ------------------ */
 
 const sendChatBtn = document.querySelector(".chat-input button");
 const chatInput = document.querySelector(".chat-input textarea");

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -192,6 +196,7 @@ body {
   opacity: 1;
 }
 
+/* -------------------- MEDIA QUERIES ------------------------ */
 @media screen and (max-width:490px) {
   .chatbot {
     right: 0;
