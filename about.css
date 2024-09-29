@@ -21,6 +21,72 @@ body {
   color: #324b4c;
 }
 
+/* -------------------- ANIMATION KEYFRAMES ------------------------ */
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.9;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes appear-second {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes slide-left-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right-in {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* -------------------- ANIMATION APPLICATION ------------------------ */
+
+.heading {
+  animation: appear-second 1.3s ease;
+}
+
+.about-content {
+  animation: slide-left-in 1.3s ease;
+}
+
+.about-image {
+  animation: slide-right-in 1.3s ease;
+}
+
+.feature-container,
+.cards-container {
+  animation: appear-second 1.3s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
 /* -------------------- AI CHATBOT ------------------------ */
 .chatbot {
   position: fixed;
@@ -32,7 +98,7 @@ body {
   width: 420px;
   border-radius: 15px;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
   transform-origin: bottom right;
   transition: all 0.2s ease;
   z-index: 50;
@@ -195,7 +261,7 @@ body {
 }
 
 /* -------------------- MEDIA QUERIES ------------------------ */
-@media screen and (max-width:490px) {
+@media screen and (max-width: 490px) {
   .chatbot {
     right: 0;
     bottom: 0;
@@ -219,28 +285,28 @@ body {
 
 /* -------------------- NAVIGATION BAR ------------------------ */
 
-header nav{
+header nav {
   height: 7vh;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
 }
 
-header h1{
+header h1 {
   font-size: 30px;
   font-weight: 700;
   margin-left: 40px;
-  color: #00777C;
+  color: #00777c;
 }
 
-header h1 span{
+header h1 span {
   color: #00acb1;
 }
 
-header ul{
+header ul {
   display: flex;
   margin: 50px;
   list-style: none;
@@ -254,39 +320,39 @@ header ul li:hover {
   transform: scale(1.25);
 }
 
-header a{
+header a {
   text-decoration: none;
-  color: #324B4C;
-  padding: .5rem 1.5rem;
+  color: #324b4c;
+  padding: 0.5rem 1.5rem;
   font-size: 20px;
   font-weight: 500;
 }
 
-header a:hover{   
+header a:hover {
   color: #00acb1;
 }
 
-#btn{
+#btn {
   all: unset;
   font-size: 25px;
   cursor: pointer;
-  transition: .1s ease-in-out;
+  transition: 0.1s ease-in-out;
   display: none;
 }
 
-#btn:hover{
+#btn:hover {
   transform: scale(1.2);
 }
 
 /* -------------------- MEDIA QUERIES ------------------------ */
 
-@media screen and (max-width: 1050px){
-  #btn{
+@media screen and (max-width: 1050px) {
+  #btn {
     display: block;
     margin-right: 30px;
   }
 
-  header ul{
+  header ul {
     position: absolute;
     top: 3.6rem;
     width: 100%;
@@ -299,11 +365,11 @@ header a:hover{
     display: none;
   }
 
-  header ul li a{
+  header ul li a {
     color: #f5f5f5;
   }
 
-  header ul.show{
+  header ul.show {
     display: flex;
     gap: 25px;
     margin: 0;
@@ -318,40 +384,38 @@ header a:hover{
   }
 }
 
-@media screen and (max-width: 600px){
-  
+@media screen and (max-width: 600px) {
   header {
     width: 100%;
   }
-  
-  header ul{
+
+  header ul {
     width: 90%;
     right: 1.5rem;
   }
 
-  header ul.show{
+  header ul.show {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 425px){ 
-  header ul.show{
+@media screen and (max-width: 425px) {
+  header ul.show {
     width: 100%;
   }
-  
-  #btn{
+
+  #btn {
     font-size: 24px;
   }
 }
 
-@media screen and (max-width: 320px){ 
-  
-  header h1{
+@media screen and (max-width: 320px) {
+  header h1 {
     font-size: 24px;
     margin-left: 15px;
   }
-  
-  #btn{
+
+  #btn {
     font-size: 20px;
   }
 }
@@ -427,7 +491,7 @@ header a:hover{
 }
 
 .about-card {
-  box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
   padding: 20px 0px 0px 15px;
   border-radius: 20px;
   margin: 20px;
@@ -472,7 +536,7 @@ header a:hover{
   }
 
   .about-image {
-    width:72%;
+    width: 72%;
     height: 16%;
   }
 }
@@ -481,11 +545,11 @@ header a:hover{
   .about-content {
     margin-bottom: -15px;
   }
-  
+
   .about-content h1 {
     font-size: 22px;
   }
-  
+
   .about-content h2 {
     font-size: 46px;
   }
@@ -507,15 +571,15 @@ header a:hover{
   .about-container {
     margin: 18px;
   }
-  
+
   .about-content {
     max-width: 100%;
   }
-  
+
   .about-content h1 {
     font-size: 18px;
   }
-  
+
   .about-content h2 {
     font-size: 38px;
   }
@@ -534,9 +598,9 @@ header a:hover{
   }
 
   .about-card h3 {
-    font-size: 20px;;
+    font-size: 20px;
   }
-  
+
   .about-card p {
     font-size: 14px;
   }
@@ -557,20 +621,20 @@ header a:hover{
   margin-top: 120px;
 }
 
-.second-container{
+.second-container {
   display: flex;
   gap: 40px;
   padding: 50px;
   border-radius: 8px;
 }
 
-.feature-card{
+.feature-card {
   background-color: #fff;
   text-align: center;
   padding: 20px;
   border-radius: 8px;
   flex: 1;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
   transition: all 0.5s ease;
 }
 
@@ -592,51 +656,49 @@ header a:hover{
   color: #f5f5f5;
 }
 
-.feature-icon i{
+.feature-icon i {
   font-size: 60px;
   margin: 0 auto 20px auto;
   color: #00acb1;
 }
 
-.feature-card h3{
+.feature-card h3 {
   margin-bottom: 10px;
   font-size: 26px;
   font-weight: 600;
 }
 
-.feature-card p{
+.feature-card p {
   font-size: 18px;
   line-height: 1.5;
 }
 
 /* -------------------- MEDIA QUERIES ------------------------ */
 
-@media (max-width: 768px){
-  
+@media (max-width: 768px) {
   .feature-container {
     margin-top: 100px;
   }
-  
-  .second-container{
-      flex-direction: column;
-      padding: 40px;
+
+  .second-container {
+    flex-direction: column;
+    padding: 40px;
   }
 }
 
-@media (max-width: 480px){
-  
+@media (max-width: 480px) {
   .feature-container {
     margin-top: 50px;
   }
-  
-  .feature-card{
-      padding: 10px;
+
+  .feature-card {
+    padding: 10px;
   }
-  .feature-card h3{
-      font-size: 16px;
+  .feature-card h3 {
+    font-size: 16px;
   }
-  .feature-card p{
-      font-size: 12px;
+  .feature-card p {
+    font-size: 12px;
   }
 }
 
@@ -709,7 +771,7 @@ footer {
   padding: 100px 0px 30px;
   font-size: 14px;
   line-height: 20px;
-  background: linear-gradient(to right, #00acb1, #00777C);
+  background: linear-gradient(to right, #00acb1, #00777c);
   border-top-left-radius: 125px;
   margin-top: 30px;
 }
@@ -750,7 +812,7 @@ footer {
   margin-bottom: 40px;
 }
 
-.social-icon  {
+.social-icon {
   display: flex;
 }
 
@@ -802,7 +864,7 @@ hr {
 
 /* -------------------- MEDIA QUERIES ------------------------ */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   footer {
     bottom: unset;
   }

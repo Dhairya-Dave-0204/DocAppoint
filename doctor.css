@@ -21,6 +21,77 @@ body {
   color: #324b4c;
 }
 
+/* -------------------- ANIMATION KEYFRAMES ------------------------ */
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.9;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes appear-second {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes slide-left-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right-in {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* -------------------- ANIMATION APPLICATION ------------------------ */
+
+.search-container,
+.heading,
+.cat-container {
+  animation: appear 1.3s ease;
+}
+
+.main-container {
+  animation: appear-second 1.3s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.img-box {
+  animation: slide-left-in 1.3s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.text-box {
+  animation: slide-right-in 1.3s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
 /* --------------------------------------- DESKTOP ------------------------------------------------ */
 
 /* -------------------- AI CHATBOT ------------------------ */
@@ -34,7 +105,7 @@ body {
   width: 420px;
   border-radius: 15px;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
   transform-origin: bottom right;
   transition: all 0.2s ease;
   z-index: 50;
@@ -197,7 +268,7 @@ body {
 }
 
 /* -------------------- MEDIA QUERIES ------------------------ */
-@media screen and (max-width:490px) {
+@media screen and (max-width: 490px) {
   .chatbot {
     right: 0;
     bottom: 0;
@@ -443,10 +514,10 @@ header a:hover {
 }
 
 /* -------------------- MEDIA QUERIES ------------------------ */
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
   .input-box .button {
-      font-size: 14px;
-      padding: 12px 15px;
+    font-size: 14px;
+    padding: 12px 15px;
   }
 }
 
